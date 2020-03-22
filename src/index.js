@@ -1,3 +1,8 @@
 module.exports = function check(str, bracketsConfig) {
-  // your solution
-}
+
+    let arr = Array.from(new Set(str));
+    if (str !== arr) {
+        return true;
+    }
+    return false;
+};
